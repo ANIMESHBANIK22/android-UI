@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frang_a_bg"
+    tools:context=".Check_Out_Review_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="2dp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/check_out"
+            android:textSize="18dp"
+            android:paddingLeft="@dimen/marginTop30"
+            android:textColor="@color/app_title_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/state_progress_bar"
+                android:id="@+id/progress_bar"/>
+
+            <TextView
+                android:id="@+id/heding"
+                android:layout_below="@id/progress_bar"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginTop10"
+                android:padding="@dimen/marginTop10"
+                android:text="Your purchasing this items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/recycles"
+            android:layout_below="@id/heding"
+            android:paddingLeft="@dimen/marginTop10"
+            android:paddingRight="@dimen/marginTop10"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleViewReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginTop50"
+                android:id="@+id/startingbubt_row"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_marginLeft="@dimen/marginTop10"
+                android:layout_marginRight="@dimen/marginTop10"
+                android:layout_below="@id/recycles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Starting Subtotal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="35.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/delivery_row"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_marginLeft="@dimen/marginTop10"
+                android:layout_marginRight="@dimen/marginTop10"
+                android:layout_below="@id/startingbubt_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Delivery fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="5.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shorpping_fee_row"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_marginLeft="@dimen/marginTop10"
+                android:layout_marginRight="@dimen/marginTop10"
+                android:layout_below="@id/delivery_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Shopping fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="2.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/total_price_row"
+                android:layout_marginTop="@dimen/marginTop5"
+                android:layout_below="@id/shorpping_fee_row"
+                android:background="@color/white"
+                android:padding="@dimen/marginTop10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/order_total"
+                    android:text="@string/order_total"
+                    android:textSize="@dimen/marginTop20"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/delivary_order"
+                    android:text="@string/delivery_order"
+                    android:textSize="14dp"
+                    android:layout_below="@id/order_total"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:text="$ 256.52"
+                    android:textSize="@dimen/marginTop20"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/delivary_price"
+                    android:text="$ 12.58"
+                    android:textSize="14dp"
+                    android:layout_below="@id/total_price"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/total_price_row"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="@dimen/marginTop5"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/continue_btn"
+                    android:background="@drawable/background_primary_no_border"
+                    android:hint="Confirm Your Order"
+                    android:layout_marginBottom="@dimen/marginTop5"
+                    android:textColorHint="@color/white"
+                    android:layout_marginLeft="@dimen/marginTop10"
+                    android:layout_marginRight="@dimen/marginTop10"
+                    android:paddingRight="@dimen/marginTop20"
+                    android:paddingLeft="@dimen/marginTop20"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_check_circle"
+                    android:textSize="@dimen/marginTop20"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

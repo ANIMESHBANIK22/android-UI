@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/frang_a_bg"
+        android:layout_height="12dp" />
+    <LinearLayout
+        android:id="@+id/ltop"
+        android:paddingLeft="@dimen/marginTop10"
+        android:paddingRight="@dimen/marginTop10"
+        android:paddingBottom="@dimen/marginTop10"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@color/frang_a_bg"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/number"
+            android:text="148"
+            android:textSize="18dp"
+            android:textColor="@color/title_notf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text=" things happened"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp" />
+        <TextView
+            android:text="CLEAR"
+            android:textSize="18dp"
+            android:textColor="@color/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/marginTop10"/>
+
+</LinearLayout>

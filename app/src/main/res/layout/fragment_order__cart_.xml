@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/frang_a_bg">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/recycl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop10"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/total_details"
+            android:padding="@dimen/marginTop10"
+            android:orientation="vertical"
+            android:layout_below="@id/recycl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:layout_below="@id/recycleViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Starting Subtotal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/marginTop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/marginTop"
+                android:text="US$, "
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/marginTop"
+                android:text="25.00"
+                android:textColor="@color/black"
+                android:paddingRight="@dimen/marginTop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_below="@id/recycleViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Subtotal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="22.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_below="@id/recycleViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Shipping Fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="35.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_below="@id/recycleViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Estimated Tax"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="5.00"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:layout_below="@id/recycleViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ORDER TOTAL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/marginTop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/marginTop"
+                    android:text="US$, "
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/marginTop"
+                    android:text="256.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/marginTop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/total_details"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/marginTop5"
+            android:id="@+id/apply_row"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/marginTop10"
+                android:background="@drawable/background_dark"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/marginTop20"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/marginTop5"
+                android:textSize="@dimen/marginTop20"
+                android:layout_marginLeft="@dimen/marginTop5"
+                android:text="Got a promo code ?"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:background="@drawable/background_primary"
+                android:padding="3dp"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/marginTop5"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@id/apply_row"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/marginTop10"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="@dimen/marginTop5"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/register_button_color"
+                android:paddingRight="@dimen/marginTop20"
+                android:hint="Proccesed to checkout"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="@dimen/marginTop5"
+                android:layout_marginRight="@dimen/marginTop5"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textSize="@dimen/marginTop20"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

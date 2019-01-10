@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/marginTop5"
+    android:paddingLeft="@dimen/marginTop10"
+    android:paddingRight="@dimen/marginTop10">
+
+    <RelativeLayout
+        android:id="@+id/singleRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_girl"
+            android:layout_margin="4dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/pNametxt"
+            android:text="User Name"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:textColor="@color/title_notf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/userImg"
+            android:layout_toEndOf="@+id/userImg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/pName2txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/marginTop5"
+            android:layout_toRightOf="@id/pNametxt"
+            android:text=" On facebook"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pJobProfiletxt"
+            android:text="Job Profile"
+            android:textSize="16dp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pNametxt"
+            android:layout_alignLeft="@+id/pNametxt"
+            android:layout_alignStart="@+id/pNametxt" />
+
+        <ImageView
+            android:id="@+id/add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_friend"
+            android:layout_margin="4dp"
+            android:layout_alignRight="@+id/pJobProfiletxt"
+            android:layout_alignEnd="@+id/pJobProfiletxt"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

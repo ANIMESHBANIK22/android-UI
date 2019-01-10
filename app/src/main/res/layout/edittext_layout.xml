@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/marginTop20"
+    android:paddingBottom="@dimen/marginTop20"
+    android:paddingLeft="@dimen/marginTop15"
+    android:paddingRight="@dimen/marginTop15"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/first_name"
+        android:padding="@dimen/marginTop10"
+        android:hint="@string/firstname"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textColorHint="@color/halka_Primary"
+        android:background="@drawable/background_dark"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/marginTop10"
+        android:hint="@string/lastname"
+        android:singleLine="true"
+        android:textColorHint="@color/halka_Primary"
+        android:textColor="@color/black"
+        android:background="@drawable/background_dark"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/address_line1"
+        android:layout_below="@id/first_name"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:padding="@dimen/marginTop10"
+        android:hint="Address line 1"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:textColorHint="@color/halka_Primary"
+        android:background="@drawable/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/address_line2"
+        android:layout_below="@id/address_line1"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:padding="@dimen/marginTop10"
+        android:maxLines="2"
+        android:hint="Address line 2 (Optional)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/marginTop15"
+        android:textColorHint="@color/halka_Primary"
+        android:background="@drawable/background_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/zip"
+        android:layout_below="@id/address_line2"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:paddingTop="@dimen/marginTop10"
+        android:paddingBottom="@dimen/marginTop10"
+        android:paddingLeft="@dimen/marginTop20"
+        android:paddingRight="@dimen/marginTop20"
+        android:maxLines="2"
+        android:hint="Zip"
+        android:textColor="@color/black"
+        android:textColorHint="@color/halka_Primary"
+        android:background="@drawable/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_below="@id/address_line2"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:paddingTop="@dimen/marginTop10"
+        android:paddingBottom="@dimen/marginTop10"
+        android:paddingLeft="@dimen/marginTop20"
+        android:paddingRight="@dimen/marginTop20"
+        android:maxLines="2"
+        android:textColorHint="@color/halka_Primary"
+        android:hint="City"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:background="@drawable/background_dark"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_below="@id/address_line2"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:paddingTop="@dimen/marginTop10"
+        android:paddingBottom="@dimen/marginTop10"
+        android:paddingLeft="@dimen/marginTop20"
+        android:paddingRight="@dimen/marginTop20"
+        android:maxLines="2"
+        android:textSize="@dimen/marginTop18"
+        android:layout_alignParentRight="true"
+        android:hint="State"
+        android:textColorHint="@color/halka_Primary"
+        android:textColor="@color/black"
+        android:background="@drawable/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

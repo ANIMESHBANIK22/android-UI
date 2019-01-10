@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_text_size">50dp</dimen>
+    <dimen name="marginTop">15dp</dimen>
+    <dimen name="marginTop15">15dp</dimen>
+    <dimen name="marginTop18">18dp</dimen>
+    <dimen name="marginTop10">10dp</dimen>
+    <dimen name="marginTop5">5dp</dimen>
+    <dimen name="marginTop20">20dp</dimen>
+    <dimen name="marginTop30">30dp</dimen>
+    <dimen name="marginTop40">40dp</dimen>
+    <dimen name="marginTop50">50dp</dimen>
+</resources>

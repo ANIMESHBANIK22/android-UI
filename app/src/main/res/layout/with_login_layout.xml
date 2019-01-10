@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/fb_login"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/marginTop15"
+        android:layout_marginRight="@dimen/marginTop15"
+        android:padding="4dp"
+        android:background="@drawable/facebook_bg"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:src="@drawable/facebook_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:text="@string/facebook"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+    <LinearLayout
+        android:id="@+id/twitter_login"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginLeft="@dimen/marginTop15"
+        android:layout_marginRight="@dimen/marginTop15"
+        android:background="@drawable/twitter_bg"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:src="@drawable/twiter_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:text="@string/twitter"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/marginTop15"
+        android:layout_marginRight="@dimen/marginTop15"
+        android:padding="4dp"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:background="@drawable/google_bg"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:src="@drawable/google_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="@string/google"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

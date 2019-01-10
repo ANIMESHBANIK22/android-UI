@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="halka_Primary">#cdc2ec</color>
+    <color name="colorPrimary">#7d4eff</color>
+    <color name="colorPrimaryDark">#5d31d9</color>
+    <color name="colorAccent">#695669</color>
+    <color name="login_editxt">#c7c5c9</color>
+    <color name="app_title_color">#020202</color>
+    <color name="register_btn">#1de1b0</color>
+    <color name="frang_a_bg">#e2e5e7</color>
+    <color name="h_black">#aea9a9</color>
+    <color name="black">#484545</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#f9f6f6</color>
+    <color name="login_txt_color">#9d79ff</color>
+    <color name="facebook_bg_color">#4b6eaa</color>
+    <color name="google_bg_color">#dc4f42</color>
+    <color name="twitter_bg_color">#2cabe0</color>
+    <color name="title_notf">#b0a2d6</color>
+
+
+    <color name="red">#ff144f</color>
+    <color name="blue">#03A9F4</color>
+    <color name="orange">#fffaaa00</color>
+</resources>

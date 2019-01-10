@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/frang_a_bg"
+    tools:context=".Your_Cart_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="2dp"
+            android:src="@drawable/ic_close"
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/your_cart"
+            android:textSize="18dp"
+            android:paddingRight="30dp"
+            android:textColor="@color/app_title_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/recycleViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop10"/>
+
+
+    <RelativeLayout
+        android:layout_below="@id/recycleViewContainer"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/apply_row"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="@dimen/marginTop10"
+            android:background="@drawable/background_dark"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/marginTop20"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/marginTop5"
+            android:textSize="@dimen/marginTop20"
+            android:layout_marginLeft="@dimen/marginTop5"
+            android:text="Got a promo code ?"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/background_null"
+            android:padding="3dp"
+            android:text="Apply"
+            android:layout_marginLeft="@dimen/marginTop5"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_row"
+        android:layout_marginTop="@dimen/marginTop20"
+        android:layout_below="@id/apply_row"
+        android:background="@color/white"
+        android:padding="@dimen/marginTop5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_total"
+            android:text="@string/order_total"
+            android:textSize="@dimen/marginTop20"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/marginTop5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/delivary_order"
+            android:text="@string/delivery_order"
+            android:textSize="14dp"
+            android:layout_below="@id/order_total"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="@dimen/marginTop5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/total_price"
+            android:text="$ 256.52"
+            android:textSize="@dimen/marginTop20"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/marginTop5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/delivary_price"
+            android:text="$ 12.58"
+            android:textSize="14dp"
+            android:layout_below="@id/total_price"
+            android:textColor="@color/colorPrimary"
+            android:paddingRight="@dimen/marginTop5"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/order_row"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/marginTop10"
+        android:gravity="bottom"
+        android:padding="@dimen/marginTop5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/background_null"
+            android:padding="3dp"
+            android:text="Apple Pay"
+            android:layout_marginLeft="@dimen/marginTop5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="3dp" />
+        <Button
+            android:background="@drawable/background_primary"
+            android:padding="3dp"
+            android:text="CHECKOUT"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/marginTop5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

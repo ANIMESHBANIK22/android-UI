@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">mystore</string>
+    <string name="app_name0">My Store</string>
+    <string name="line2">Prototype shopping apps faster</string>
+    <string name="line3">I AM REGISTERED</string>
+    <string name="dot">.........................</string>
+    <string name="facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="twitter">AUTHORIZE VIA TWITTER</string>
+    <string name="google">JUMP IN WITH GOOGLE+</string>
+    <string name="login">LOG IN</string>
+    <string name="register">REGISTER</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">I FORGOT MY PASS</string>
+    <string name="reset_password">RESET MY PASSWORD</string>
+    <string name="create_account">Create Account</string>
+    <string name="start_screen">Start Screen</string>
+    <string name="notifications">Notifications</string>
+    <string name="your_cart">Your Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="details">"The adapter is a component that stands between the data model we want to show in our app UI and the UI component that renders this information In other words, an adapter guides the way the information are shown in theUI. So if we want to display our contacts, we need an adapter for the RecyclerView."</string>
+    <string name="title_activity_navigation__">Navigation_Activity_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_bottom__navigation">Bottom_NavigationActivity</string>
+    <string name="ic_bag">Bag</string>
+    <string name="ic_import_contacts">Contact</string>
+    <string name="ic_loyalty">Loyalty</string>
+    <string name="ic_account">Account</string>
+    <string name="shopping_cart">Cart</string>
+    <string name="just_item">Just a sample of item \n in your cart</string>
+    <string name="itemsinyour">You do not have any items in your \n cart.Go <u><font color="#0b466b">shopping</font></u> </string>
+
+    <string name="terms_of_service">By registering you are agree to our \n  <font color="#000"> <b>Termas of Service</b></font> and <font color="#000"><b>Privacy Policy</b></font></string>
+    <string name="billing_address">Billing address same as shipping</string>
+    <string name="whats_billing">What is your billing address?</string>
+    <string name="check_out">Checkout</string>
+    <string name="order_total">Order Total</string>
+    <string name="delivery_order">Delivery and other taxes included</string>
+
+    <string-array name="size">
+        <item>Size</item>
+        <item>1x1</item>
+        <item>2x2</item>
+        <item>3x3</item>
+        <item>4x4</item>
+        <item>5x5</item>
+    </string-array>
+
+
+    <string-array name="color">
+        <item>Color</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Black</item>
+        <item>Golden</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>Quantity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="amounts">
+        <item>Amount</item>
+        <item>120</item>
+        <item>234</item>
+        <item>374</item>
+        <item>462</item>
+        <item>538</item>
+        <item>68</item>
+        <item>720</item>
+        <item>830</item>
+        <item>973</item>
+        <item>1110</item>
+    </string-array>
+
+</resources>
